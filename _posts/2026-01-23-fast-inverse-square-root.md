@@ -1,6 +1,5 @@
 ---
 title: 平方根倒数速算法
-layout: post
 ---
 
 《雷神之锤SAN竞技场》的 [源代码](https://github.com/id-Software/Quake-III-Arena/blob/dbe4ddb10315479fc00086f08e25d968b4b43c49/code/game/q_math.c#L549-L572) ：
@@ -133,10 +132,4 @@ flowchart TD
 ```
 
 ```mermaid
-flowchart TD
-    A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{Let me think}
-    C -->|One| D[Laptop]
-    C -->|Two| E[iPhone]
-    C -->|Three| F[fa:fa-car Car]
 ```
