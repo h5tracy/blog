@@ -3,3 +3,10 @@ theme: minima
 sass:
   quiet_deps: true
   silence_deprecations: [import]
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+
