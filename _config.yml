@@ -1,7 +1,5 @@
 theme: minima
 
-# Uncomment the following setting if you wish to disable deprecation warnings
-#   from newer versions of sass converter. Adapt as required.
 sass:
   quiet_deps: true
   silence_deprecations: [import]
