@@ -161,6 +161,19 @@ $$
 \end{align}
 $$
 
+$$
+\begin{array}{l}
+\ \ \ \ \ 132\\
+4 \overline{\smash{\big)}\; 531}\\
+\ \ \ \ \ \underline{4 \ \ }\\
+\ \ \ \ \ 13 \\
+\ \ \ \ \ \underline{12 \ \ } \\
+\ \ \ \ \ \ \ 11\\
+\ \ \ \ \ \ \ \underline{\ \ 8 } \\
+\ \ \ \ \ \ \ \ \ 3\\
+\notag
+\end{array}
+$$
 
 $$
 \newcommand\showdiv[1]{\overline{\smash{)}#1}}
