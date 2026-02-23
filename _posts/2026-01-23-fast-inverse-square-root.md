@@ -133,3 +133,29 @@ flowchart TD
 
 ```mermaid
 ```
+
+$$
+\begin{align}
+                          11110001111\ 100 \\
+1011 \enclose{longdiv}{11010011101100\ 000} \kern-.2em \\
+     \underline{\oplus 1011 \phantom{0000000000\ 000}} \\
+                        1100 \phantom{000000000\ 000} \\
+      \underline{\oplus 1011 \phantom{000000000\ 000}} \\
+                         1110 \phantom{00000000\ 000} \\
+       \underline{\oplus 1011 \phantom{00000000\ 000}} \\
+                          1011 \phantom{0000000\ 000} \\
+        \underline{\oplus 1011 \phantom{0000000\ 000}} \\
+                              1101 \phantom{000\ 000} \\
+            \underline{\oplus 1011 \phantom{000\ 000}} \\
+                               1101 \phantom{00\ 000} \\
+             \underline{\oplus 1011 \phantom{00\ 000}} \\
+                                1100 \phantom{0\ 000} \\
+              \underline{\oplus 1011 \phantom{0\ 000}} \\
+                                 1110 \phantom{\ 000} \\
+               \underline{\oplus 1011 \phantom{\ 000}} \\
+                                  101\ 0 \phantom{00} \\
+                \underline{\oplus 101\ 1 \phantom{00}} \\
+                                     \ 100
+\end{align}
+$$
+
