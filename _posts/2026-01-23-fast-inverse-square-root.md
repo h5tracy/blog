@@ -134,6 +134,8 @@ flowchart TD
 ```mermaid
 ```
 
+---
+
 $$
 \begin{align}
                           11110001111\ 100 \\
