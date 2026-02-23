@@ -137,25 +137,26 @@ flowchart TD
 $$
 \begin{align}
                           11110001111\ 100 \\
-1011 \enclose{longdiv}{11010011101100\ 000} \kern-.2em \\
-     \underline{\oplus 1011 \hphantom{0000000000\ 000}} \\
-                        1100 \hphantom{000000000\ 000} \\
-      \underline{\oplus 1011 \hphantom{000000000\ 000}} \\
-                         1110 \hphantom{00000000\ 000} \\
-       \underline{\oplus 1011 \hphantom{00000000\ 000}} \\
-                          1011 \hphantom{0000000\ 000} \\
-        \underline{\oplus 1011 \hphantom{0000000\ 000}} \\
-                              1101 \hphantom{000\ 000} \\
-            \underline{\oplus 1011 \hphantom{000\ 000}} \\
-                               1101 \hphantom{00\ 000} \\
-             \underline{\oplus 1011 \hphantom{00\ 000}} \\
-                                1100 \hphantom{0\ 000} \\
-              \underline{\oplus 1011 \hphantom{0\ 000}} \\
-                                 1110 \hphantom{\ 000} \\
-               \underline{\oplus 1011 \hphantom{\ 000}} \\
-                                  101\ 0 \hphantom{00} \\
-                \underline{\oplus 101\ 1 \hphantom{00}} \\
+1011 \enclose{longdiv}{11010011101100\ 000} \hspace{-.2em} \\
+     \underline{\oplus 1011 \hspace{6.83em}} \\
+                        1100 \hspace{6.33em} \\
+      \underline{\oplus 1011 \hspace{6.33em}} \\
+                         1110 \hspace{5.83em} \\
+       \underline{\oplus 1011 \hspace{5.83em}} \\
+                          1011 \hspace{5.33em} \\
+        \underline{\oplus 1011 \hspace{5.33em}} \\
+                              1101 \hspace{3.33em} \\
+            \underline{\oplus 1011 \hspace{3.33em}} \\
+                               1101 \hspace{2.83em} \\
+             \underline{\oplus 1011 \hspace{2.83em}} \\
+                                1100 \hspace{2.33em} \\
+              \underline{\oplus 1011 \hspace{2.33em}} \\
+                                 1110 \hspace{1.83em} \\
+               \underline{\oplus 1011 \hspace{1.83em}} \\
+                                  101\ 0 \hspace{1em} \\
+                \underline{\oplus 101\ 1 \hspace{1em}} \\
                                      \ 100
 \end{align}
 $$
+
 
