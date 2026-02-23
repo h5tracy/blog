@@ -162,3 +162,8 @@ $$
 $$
 
 
+$$
+\newcommand\showdiv[1]{\overline{\smash{)}#1}}
+1011 \showdiv{11010011101100\ 000}
+$$
+
