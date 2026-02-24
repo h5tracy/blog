@@ -29,7 +29,7 @@ $$
 \vec x = [s, \underbrace{e_{k-1}, \dots, e_1, e_0}_\text{exp}, \underbrace{f_{n-1}, \dots, f_1, f_0}_\text{frac}]
 $$
 
-在单精度浮点格式中， $k = 8$ 、 $n = 23$ 。
+在单精度浮点格式中， $$k = 8$$ 、 $$n = 23$$ 。
 在双精度浮点格式中， $k = 11$ 、 $n = 52$ 。
 
 IEEE 浮点标准用 $V = (-1)^s \times M \times 2^E$ 的形式来表示一个数。
