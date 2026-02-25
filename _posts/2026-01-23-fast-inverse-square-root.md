@@ -30,51 +30,61 @@ $$
 $$
 
 在单精度浮点格式中， $$k = 8$$ 、 $$n = 23$$ 。
-在双精度浮点格式中， $k = 11$ 、 $n = 52$ 。
+在双精度浮点格式中， $$k = 11$$ 、 $$n = 52$$ 。
 
-IEEE 浮点标准用 $V = (-1)^s \times M \times 2^E$ 的形式来表示一个数。
+IEEE 浮点标准用 $$V = (-1)^s \times M \times 2^E$$ 的形式来表示一个数。
 
 其中，
 
 $$
-\begin{align}
+\begin{equation}
+\begin{aligned}
   M &= {1 . f_{n-1} \dots f_1 f_0}_2 \\
     &= 1 + f
-\end{align}
+\end{aligned}
+\end{equation}
 $$
 
 $$
-\begin{align}
+\begin{equation}
+\begin{aligned}
   E &= e_{k-1} \dots e_1 e_0 - (2^{k-1} - 1) \\
     &= e - \text{Bias}
-\end{align}
+\end{aligned}
+\end{equation}
 $$
 
 ## 魔数
 
 $$
-\begin{align}
+\begin{equation}
+\begin{aligned}
   y & = \frac{1}{\sqrt x} \\
   \log_2{y} & = -\frac{1}{2} \log_2{x} \\
   \log_2(M_y \times 2^{E_y}) & = -\frac{1}{2} \log_2(M_x \times 2^{E_x}) \\
   \log_2{M_y} + E_y & = -\frac{1}{2} (\log_2{M_x} + E_x)
-\end{align}
+\end{aligned}
+\end{equation}
 $$
 
 $$
-\begin{align}
+\begin{equation}
+\begin{aligned}
   \log_2{M}
     &= \log_2(1 + f) \\
     & \approx f + \sigma
-\end{align}
+\end{aligned}
+\end{equation}
 $$
 
 $$
-\begin{align}
+\begin{equation}
+\begin{aligned}
   (f_y + \sigma) + (e_y - \text{Bias}) & = -\frac{1}{2} [(f_x + \sigma) + (e_x - \text{Bias})] \\
   (f_y + e_y) \times 2^n & = \frac{3}{2} (\text{Bias} - \sigma) \times 2^n - \frac{1}{2} (f_x + e_x) \times 2^n \\
   \text{B2T}_w(\vec y) & = R - \frac{1}{2} \text{B2T}_w(\vec x)
-\end{align}
+\end{aligned}
+\end{equation}
 $$
 
 其中, $R = \text{0x5f3759df}$ 。
@@ -133,56 +143,3 @@ flowchart TD
 
 ```mermaid
 ```
-
----
-
-$$
-\begin{align}
-                          11110001111\ 100 \\
-1011 \enclose{longdiv}{11010011101100\ 000} \hspace{-.2em} \\
-     \underline{\oplus 1011 \hspace{6.83em}} \\
-                        1100 \hspace{6.33em} \\
-      \underline{\oplus 1011 \hspace{6.33em}} \\
-                         1110 \hspace{5.83em} \\
-       \underline{\oplus 1011 \hspace{5.83em}} \\
-                          1011 \hspace{5.33em} \\
-        \underline{\oplus 1011 \hspace{5.33em}} \\
-                              1101 \hspace{3.33em} \\
-            \underline{\oplus 1011 \hspace{3.33em}} \\
-                               1101 \hspace{2.83em} \\
-             \underline{\oplus 1011 \hspace{2.83em}} \\
-                                1100 \hspace{2.33em} \\
-              \underline{\oplus 1011 \hspace{2.33em}} \\
-                                 1110 \hspace{1.83em} \\
-               \underline{\oplus 1011 \hspace{1.83em}} \\
-                                  101\ 0 \hspace{1em} \\
-                \underline{\oplus 101\ 1 \hspace{1em}} \\
-                                     \ 100
-\end{align}
-$$
-
-$$
-11110001111\ 100
-\over
-1011 \hspace{60pt}
-$$
-
-$$
-\begin{array}{l}
-\ \ \ \ \ 132\\
-4 \overline{\smash{\big)}\; 531}\\
-\ \ \ \ \ \underline{4 \ \ }\\
-\ \ \ \ \ 13 \\
-\ \ \ \ \ \underline{12 \ \ } \\
-\ \ \ \ \ \ \ 11\\
-\ \ \ \ \ \ \ \underline{\ \ 8 } \\
-\ \ \ \ \ \ \ \ \ 3\\
-\notag
-\end{array}
-$$
-
-$$
-\newcommand\showdiv[1]{\overline{\smash{)}#1}}
-1011 \showdiv{11010011101100\ 000}
-$$
-
