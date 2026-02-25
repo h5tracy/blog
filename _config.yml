@@ -10,3 +10,5 @@ defaults:
     values:
       layout: post
 
+kramdown:
+  math_engine: katex
